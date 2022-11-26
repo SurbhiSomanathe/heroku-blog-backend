@@ -11,7 +11,7 @@ const app = express()
 dotenv.config()
 
 app.use(express.json())
-
+app.use(cors());
 app.use("/api/user", router);
 app.use("/api/blog", blogRouter);
 
